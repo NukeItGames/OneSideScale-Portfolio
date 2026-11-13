@@ -17,10 +17,12 @@ Initial preparation: November 13, 2026, Linux x86_64.
 | Original repository safety | PASS: private visibility retained; complete remote ref set unchanged |
 | Unreal plugin / Editor target compilation | NOT RUN: no Unreal installation or engine toolchain |
 | Unreal automation | NOT RUN: all five definitions preserved; no editor available |
-| Actual scaling tool in viewport | NOT RUN: no editor available |
+| Actual scaling tool in viewport | Author confirms successful personal use in Unreal; no independent viewport test recorded during publication |
 | Screenshots and recorded demonstration | Unavailable: source contains only toolbar artwork |
 
-No Unreal runtime validation is claimed. A filesystem search for UnrealEditor,
+The author confirms successful personal use in Unreal Engine. Publication did
+not include an independent editor session or a full automated engine test run.
+A filesystem search for UnrealEditor,
 RunUAT, and installed engine directories found no engine. A system C++ compiler
 alone cannot compile the Unreal module without engine headers, generated UHT
 code, libraries, and UnrealBuildTool. Unreal was not downloaded or redistributed.

@@ -7,7 +7,7 @@ operating system, toolchain, commit, and actual results.
 
 ## Build and automation
 
-Generate and build the independent host from the README. Open it, create a new
+Generate and build the independent host using [setup](SETUP.md). Open it, create a new
 unsaved empty level, and stay in **Selection** mode. Use a fresh session: the
 interaction test temporarily changes selection and mode and requires a Level
 Editor viewport. Open Tools → Test Automation (or Session Frontend → Automation,
