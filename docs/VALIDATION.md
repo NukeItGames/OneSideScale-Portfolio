@@ -12,8 +12,8 @@ Initial preparation: November 13, 2026, Linux x86_64.
 | Final snapshot secret scan | PASS, Gitleaks 8.30.1, zero findings |
 | Fresh portfolio history secret scan | PASS, zero findings; new root with no imported source commits |
 | CI workflow syntax | PASS, Actionlint 1.7.7; upstream action tag hashes verified |
-| Hosted GitHub Actions | NOT RUN: repository creation blocked by integration permissions |
-| Publication | BLOCKED: GitHub createRepository returned Resource not accessible by integration |
+| Hosted GitHub Actions | PASS on prepared root: Linux checks, Windows checks, full-history secret scan |
+| Publication | PASS: prepared root pushed to public main without force; all 26 files independently cloned and byte-verified |
 | Original repository safety | PASS: private visibility retained; complete remote ref set unchanged |
 | Unreal plugin / Editor target compilation | NOT RUN: no Unreal installation or engine toolchain |
 | Unreal automation | NOT RUN: all five definitions preserved; no editor available |
@@ -41,15 +41,31 @@ Compatibility on other Unreal releases, operating systems, headless runners,
 Blueprint-only installation, binary packaging, and all real viewport interactions
 remains unverified. Native toolbar integration is especially version-sensitive.
 
-## Publication handoff
+## Publication verification
 
-The source and fresh local Git history are prepared. GitHub rejected creation of
-`NukeItGames/OneSideScale-Portfolio` with `Resource not accessible by integration
-(createRepository)`. No public push was attempted and no live public URL is
-claimed. The intended URL is https://github.com/NukeItGames/OneSideScale-Portfolio.
+Published November 13, 2026:
+https://github.com/NukeItGames/OneSideScale-Portfolio
 
-The owner must create an **empty public repository** with that exact name,
-without initializing README, license, or gitignore. Then push the prepared
-`main` branch, verify its tree and public visibility, inspect Actions results,
-and recheck the original repository's private visibility/refs. This document's
-publication/CI status should be updated with those actual results afterward.
+The owner created the empty public repository after the integration's initial
+creation request was denied. The existing reviewed root commit
+`97c4573c5833438e62fb5c7427f10db348f9317e` was pushed to `main` without force,
+without rebuilding or importing private history. Its tree is
+`04c493f64c2e14d4f71621fa90d03d388ad2e88f`. An independent clone matched every
+one of the 26 prepared files byte-for-byte, including the complete Source tree,
+README, MIT license, standalone build instructions, and Actions workflow.
+
+[Actions run 43354000063](https://github.com/NukeItGames/OneSideScale-Portfolio/actions/runs/43354000063)
+completed successfully on that root: engine-free checks on `ubuntu-latest` and
+`windows-latest`, plus the full-history Gitleaks scan. These are repository/host
+generation and security checks, not Unreal compilation or editor tests.
+
+GitHub authentication identified NukeItGames and repository metadata reported
+push/admin access. Git push succeeded. Description and topics updates were each
+denied with HTTP 403, `Resource not accessible by integration`; the integration's
+repository-settings permissions are narrower than the user's role.
+
+The original repository's private visibility and complete remote ref set were
+rechecked against the initial audit before publication. No original-repository
+write was performed. A documentation-only follow-up records these results;
+all 12 original Source files remain unchanged. No new Unreal compilation,
+automation, viewport test, screenshot, or recording was performed.
