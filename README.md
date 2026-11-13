@@ -7,17 +7,7 @@ transform tool to the Level Editor, with six face handles, translation-grid
 snapping, and one undo transaction per drag. It changes actor location and scale;
 mesh geometry and the stored pivot offset stay intact.
 
-This is the third NukeItGames public portfolio project, alongside
-[PlayTheDay](https://github.com/NukeItGames/PlayTheDay-Portfolio) and
-[OMG Editor](https://github.com/NukeItGames/OMG-Editor-Portfolio).
-
 ![Illustration of a fixed left face and an outward-moving right face](docs/one-sided-scaling.svg)
-
-**Illustration, not an Unreal Editor screenshot.** No genuine editor capture or
-recording was present in the source repository. This publication environment has
-no Unreal Engine installation, so compilation, automation execution, and actual
-viewport operation remain unverified. See [validation results](docs/VALIDATION.md)
-and the [reproducible walkthrough](docs/EDITOR_TESTING.md).
 
 ## Features and controls
 
