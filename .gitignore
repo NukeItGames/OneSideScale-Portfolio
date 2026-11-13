@@ -1,0 +1,53 @@
+# Unreal-generated build products and caches
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+
+# Local IDE state and generated project files
+.vs/
+.vscode/
+.idea/
+.vsconfig
+*.sln
+*.slnx
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.user
+*.userosscache
+*.sln.docstates
+*.code-workspace
+*.xcodeproj/
+*.xcworkspace/
+
+# Loose compiler, debug, and temporary output
+*.obj
+*.o
+*.pch
+*.pdb
+*.ipch
+*.log
+*.tmp
+*.bak
+*~
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Python tooling, secrets, local reports, and editor automation output
+__pycache__/
+*.pyc
+.env
+.env.*
+*.pem
+*.key
+reports/
+artifacts/

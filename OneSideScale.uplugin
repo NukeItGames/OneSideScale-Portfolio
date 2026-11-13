@@ -1,0 +1,20 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "0.1.0",
+  "FriendlyName": "OneSideScale",
+  "Description": "One-sided, non-destructive actor bounds scaling in the Level Editor.",
+  "Category": "Editor",
+  "CreatedBy": "NukeItGames",
+  "EnabledByDefault": true,
+  "CanContainContent": false,
+  "Modules": [
+    {
+      "Name": "OneSideScale",
+      "Type": "Editor",
+      "LoadingPhase": "Default"
+    }
+  ],
+  "CreatedByURL": "https://github.com/NukeItGames",
+  "DocsURL": "https://github.com/NukeItGames/OneSideScale-Portfolio"
+}

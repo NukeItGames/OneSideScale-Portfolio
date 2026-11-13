@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="330" viewBox="0 0 1000 330" role="img" aria-labelledby="title desc">
+  <title id="title">One-sided scaling: anchor the opposite face</title>
+  <desc id="desc">Conceptual diagram. A rectangle grows rightward while its left face stays fixed. This is not an Unreal Editor screenshot.</desc>
+  <rect width="1000" height="330" rx="18" fill="#111c2c"/>
+  <g font-family="sans-serif" fill="#edf4fc">
+    <text x="42" y="49" font-size="26" font-weight="bold">One face moves. The opposite face stays in place.</text>
+    <text x="42" y="80" font-size="15" fill="#a5bbd5">Conceptual illustration · actor-local bounds · not an editor capture</text>
+    <rect x="150" y="128" width="340" height="132" fill="#1d344e" stroke="#a5bbd5" stroke-width="3" stroke-dasharray="8 7"/>
+    <rect x="150" y="128" width="570" height="132" fill="#2eb7f5" fill-opacity=".13" stroke="#2eb7f5" stroke-width="3"/>
+    <path d="M150 115V273" stroke="#85e3b2" stroke-width="7"/>
+    <path d="M490 194H805m-20-15 20 15-20 15" fill="none" stroke="#2eb7f5" stroke-width="5"/>
+    <circle cx="720" cy="194" r="10" fill="#ffdc76"/>
+    <text x="80" y="301" font-size="17" fill="#85e3b2">Fixed anchor face</text>
+    <text x="380" y="301" font-size="17" fill="#a5bbd5">Original bounds</text>
+    <text x="720" y="115" font-size="17" fill="#2eb7f5">Drag outward</text>
+    <text x="748" y="247" font-size="16" fill="#ffdc76">Face handle</text>
+  </g>
+</svg>
